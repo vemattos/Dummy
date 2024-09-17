@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dados dos Funcionários</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Dados dos Funcionários</h1>
+    <div class="table-container">
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Salário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados -->
+            </tbody>
+        </table>
+    </div>
+    <div class="search-container">
+        <h2>Buscar Funcionário por ID</h2>
+        <form id="employeeSearchForm">
+            <label for="employeeId">ID do Funcionário:</label>
+            <input type="text" id="employeeId" name="employeeId">
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="employeeDetailsResult"></div>
+    </div>
+    <div class="filter-container">
+        <h2>Filtrar Funcionários</h2>
+        <form id="employeeFilterForm">
+            <label for="filterCriterion">Critério de filtro:</label>
+            <select id="filterCriterion" name="filterCriterion">
+                <option value="name">Nome</option>
+                <option value="age">Idade</option>
+                <option value="salary">Salário</option>
+            </select>
+            <input type="text" id="filterValue" name="filterValue">
+            <button type="submit">Filtrar</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
